@@ -1,0 +1,40 @@
+/*.body{
+    background-color: lightblue;
+}
+@media screen and  (min-width: 460px){
+.body{
+    background-color: lightsalmon;
+}
+}
+*/
+body{
+    background-color: rgb(236, 218, 196);
+}
+@media screen and (max-width: 600px){
+    nav{
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;  
+    }
+    nav a{
+        margin: 35px;
+        display: inline-block;
+    }
+}
+@media screen and (min-width: 601px){
+body{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: auto;
+}
+.nav{
+    grid-column: 1;
+    grid-row: 1;
+}
+.nav a{
+    display: grid;
+    margin: 10px;
+}
+}
+
